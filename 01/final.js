@@ -5,9 +5,9 @@ const file = require('fs')
 
 const sumFirstAndLast = input => {
   return input
-    .map(line => line.replace(/[^\d]/g, '')) // discard everything that is not a number
-    .map(line => ~~(line[0] + [...line].pop())) // get first and last an join them
-    .reduce((prev, curr) => prev + curr) // sum
+    .map(line => line.replace(/[^\d]/g, ''))
+    .map(line => ~~(line[0] + [...line].pop()))
+    .reduce((prev, curr) => prev + curr) 
 }
 
 // part two
