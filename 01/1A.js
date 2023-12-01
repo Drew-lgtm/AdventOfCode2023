@@ -33,4 +33,4 @@ for (const item of data) {
   }
 }
 
-console.log("Sum of first and last digits:", sum);
+console.log(sum);
