@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const data = fs.readFileSync('data.txt', 'utf8');
 
-function getSumOfCalibrationValues(data) {
+function getSumOfValues(data) {
     const lines = extractNumbers(data);
     let total = 0;
     lines.map(line => {
@@ -38,4 +38,4 @@ function getSumOfCalibrationValues(data) {
     return data.split('\n');
   }
   
-  console.log(`the total is: ${getSumOfCalibrationValues(data)}`);
+  console.log(`the total is: ${getSumOfValues(data)}`);
