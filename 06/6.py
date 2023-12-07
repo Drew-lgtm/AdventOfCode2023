@@ -5,8 +5,8 @@ Time:      7  15   30
 Distance:  9  40  200
 """
 
-with open("data.txt") as f:
-    input = f.read()
+with open("data.txt", "r") as data:
+    input = data.read()
 # print(input)
 
 def parse_input(input: str):
