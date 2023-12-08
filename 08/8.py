@@ -23,29 +23,3 @@ while currNode != 'ZZZ':
     steps += 1
 
 print('Part 1:', steps)
-
-
-#Part 2
-steps = [0] * len(currNodes)
-for cn in range(len(currNodes)):
-    currNode = currNodes[cn]
-
-    while currNode[2] != 'Z':
-        currDir = directions[steps[cn] % len(directions)]
-        if currDir == 'L':
-            currNode = nodes[currNode][0]
-        elif currDir == 'R':
-            currNode = nodes[currNode][1]
-        steps[cn] += 1
-
-#Find LCM of all steps
-for s in range(len(steps)-1):
-    greater = max(steps[s], steps[s+1])
-    currMul = greater
-
-    while (currMul % steps[s] != 0 or currMul % steps[s+1] != 0):
-        currMul += greater
-    
-    steps[s+1] = currMul
-
-print('Part 2:', steps[len(steps)-1])
