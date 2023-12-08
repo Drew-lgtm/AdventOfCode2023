@@ -5,7 +5,7 @@ const data = fs.readFileSync('./data.txt', 'utf8');
 const RED_CUBES_MAX = 12;
 const GREEN_CUBES_MAX = 13;
 const BLUE_CUBES_MAX = 14;
-const file = './data2.txt';
+const file = './data.txt';
 const lines = fs.readFileSync(file, 'utf-8').trim().split('\n');
 
 function subdivideGameInfo(lines) {
