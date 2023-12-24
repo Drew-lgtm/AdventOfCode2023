@@ -143,7 +143,7 @@ class BidirectionalTile:
             return current
 
 
-with open("data.txt", "r") as f:
+with open("data.txt ", "r") as f:
     tiles = {}
     tiles2 = {}
     width = 0
